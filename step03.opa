@@ -1,11 +1,11 @@
 import stdlib.themes.bootstrap
 
-database int /counter;
+database int /counter
 
 function action(_) {
-	/counter++;
-	Dom.add_class(#button, "btn-success");
-	#msg = <>Hello visitor number {/counter}!</>;
+	/counter++
+	Dom.add_class(#button, "btn-success")
+	#msg = <>Hello visitor number {/counter}!</>
 }
 
 function page() {

@@ -2,23 +2,23 @@ import stdlib.themes.bootstrap
 import stdlib.themes.bootstrap.font-awesome
 import stdlib.web.client
 
-database int /counter;
+database int /counter
 
 function display() {
 	#msg = <>Hello <span id="toto" onclick={
 		function(e) { Client.alert(Dom.get_id(Dom.get_at_position(e.mouse_position_on_page))) }
-	}>visitor</span> number {/counter}!</>;
+	}>visitor</span> number {/counter}!</>
 }
 
 function action(_) {
-	/counter++;
-	Dom.add_class(#button, "btn-success");
-	display();
+	/counter++
+	Dom.add_class(#button, "btn-success")
+	display()
 }
 
 function reset(_) {
-	/counter = 0;
-	display();
+	/counter = 0
+	display()
 }
 
 function page() {

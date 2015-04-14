@@ -1,7 +1,7 @@
 import stdlib.themes.bootstrap
 
 function action(_) {
-  #msg = <>Hello!</>;
+  #msg = <>Hello!</>
 }
 
 function page() {

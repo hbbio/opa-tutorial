@@ -1,21 +1,21 @@
 import stdlib.themes.bootstrap
 import stdlib.themes.bootstrap.font-awesome
 
-database int /counter;
+database int /counter
 
 function display() {
-	#msg = <>Hello visitor number {/counter}!</>;
+	#msg = <>Hello visitor number {/counter}!</>
 }
 
 function action(_) {
-	/counter++;
-	Dom.add_class(#button, "btn-success");
-	display();
+	/counter++
+	Dom.add_class(#button, "btn-success")
+	display()
 }
 
 function reset(_) {
-	/counter = 0;
-	display();
+	/counter = 0
+	display()
 }
 
 function page() {
